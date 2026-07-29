@@ -1,0 +1,33 @@
+.hero {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 56px 24px 8px;
+}
+
+.hero h1 {
+  font-size: 56px;
+  font-weight: 600;
+  margin: 0 0 14px;
+  letter-spacing: -0.02em;
+}
+
+.hero .sub {
+  font-size: 21px;
+  color: var(--gray-1);
+  font-weight: 400;
+}
+
+.hero .sub strong {
+  color: var(--black);
+  font-weight: 600;
+}
+
+@media (max-width: 980px) {
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  .hero .sub {
+    font-size: 17px;
+  }
+}

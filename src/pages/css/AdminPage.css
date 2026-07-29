@@ -1,0 +1,151 @@
+.admin-page {
+  padding: 32px;
+}
+
+.admin-card {
+  max-width: 1100px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 24px;
+  padding: 32px;
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.08);
+}
+
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 28px;
+}
+
+.admin-header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.admin-summary {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.summary-item {
+  background: #f7f7ff;
+  padding: 20px;
+  border-radius: 18px;
+  text-align: center;
+}
+
+.summary-item span {
+  display: block;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.admin-section {
+  margin-bottom: 28px;
+}
+
+.admin-section h2 {
+  margin-bottom: 16px;
+}
+
+.admin-table {
+  border: 1px solid #e5e7f0;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.admin-row {
+  display: grid;
+  grid-template-columns: 60px 160px 1fr 140px 100px;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+  border-bottom: 1px solid #e5e7f0;
+}
+
+.admin-row:last-child {
+  border-bottom: none;
+}
+
+.admin-row-head {
+  background: #f4f7ff;
+  font-weight: 700;
+}
+
+.admin-form {
+  display: grid;
+  gap: 16px;
+  background: #fafafa;
+  border-radius: 18px;
+  padding: 24px;
+  border: 1px solid #e5e7f0;
+}
+
+.form-row {
+  display: grid;
+  gap: 8px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.form-row label {
+  font-weight: 600;
+}
+
+.form-row input,
+.form-row select {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid #d9d9e4;
+  outline: none;
+}
+
+.btn-submit {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 24px;
+  border-radius: 999px;
+  border: none;
+  background: #222;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.btn-submit:hover {
+  transform: translateY(-1px);
+}
+
+@media (max-width: 900px) {
+  .admin-row,
+  .admin-row-head {
+    grid-template-columns: 60px 1fr 1fr;
+  }
+
+  .admin-table {
+    font-size: 14px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .admin-header,
+  .admin-summary {
+    grid-template-columns: 1fr;
+  }
+}

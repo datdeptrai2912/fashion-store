@@ -1,0 +1,234 @@
+.topnav {
+  background: var(--black);
+  color: #fff;
+  height: 68px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.topnav-inner {
+  width: 100%;
+  max-width: var(--maxw);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  font-size: 12.5px;
+  font-weight: 400;
+}
+
+.topnav-logo {
+  display: flex;
+  align-items: center;
+  line-height: 0;
+  cursor: pointer;
+}
+
+.topnav-logo img {
+  height: 54px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.topnav-links {
+  display: flex;
+  gap: 26px;
+  flex: 1;
+  justify-content: center;
+}
+
+.topnav-links li {
+  opacity: 0.86;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+
+.topnav-links li:hover {
+  opacity: 1;
+}
+
+.topnav-icons {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+.topnav-icons > span {
+  cursor: pointer;
+  opacity: 0.9;
+  font-size: 15px;
+}
+
+.topnav-auth {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-left: 18px;
+}
+
+.topnav-auth a {
+  font-size: 12.5px;
+  white-space: nowrap;
+  padding: 6px 14px;
+  border-radius: 980px;
+  transition:
+    opacity 0.15s ease,
+    background 0.15s ease;
+}
+
+.topnav-auth .btn-login {
+  color: #fff;
+  opacity: 0.86;
+}
+
+.topnav-auth .btn-login:hover {
+  opacity: 1;
+}
+
+.topnav-auth .btn-register {
+  background: #fff;
+  color: var(--black);
+  font-weight: 600;
+}
+
+.topnav-auth .btn-register:hover {
+  background: #e7e7e7;
+}
+
+.topnav-auth .divider {
+  width: 1px;
+  height: 14px;
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 0;
+}
+
+@media (max-width: 980px) {
+  .topnav {
+    height: auto;
+    padding: 8px 0;
+  }
+
+  .topnav-inner {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .topnav-links {
+    display: none;
+    flex: 0 0 100%;
+    flex-direction: column;
+    gap: 12px;
+    padding: 12px 0 4px;
+    order: 3;
+  }
+
+  .topnav-links.open {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .topnav-auth .btn-login {
+    display: none;
+  }
+}
+
+/* Cart badge */
+.cart-icon {
+  position: relative;
+  cursor: pointer;
+}
+.cart-badge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: #e53935;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Thanh search mở rộng */
+.search-bar {
+  background: var(--black);
+  padding: 10px 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.search-bar form {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.search-bar input {
+  flex: 1;
+  padding: 9px 16px;
+  border-radius: 980px;
+  border: none;
+  font-size: 14px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+}
+.search-bar input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+.search-bar button {
+  padding: 9px 18px;
+  border-radius: 980px;
+  border: none;
+  background: #fff;
+  color: var(--black);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.close-search {
+  background: transparent !important;
+  color: rgba(255, 255, 255, 0.7) !important;
+  font-size: 16px !important;
+  padding: 6px 10px !important;
+}
+
+/* User đã đăng nhập */
+.user-name {
+  font-size: 12.5px;
+  color: #fff;
+  opacity: 0.9;
+  white-space: nowrap;
+}
+.btn-logout {
+  font-size: 12.5px;
+  padding: 6px 14px;
+  border-radius: 980px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+.btn-logout:hover {
+  background: rgba(255, 255, 255, 0.1);
+}

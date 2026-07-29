@@ -1,0 +1,79 @@
+.bank-container {
+    min-height: 100vh;
+    background: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.bank-card {
+    width: 450px;
+    background: white;
+    border-radius: 15px;
+    padding: 35px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.12);
+}
+
+.bank-card h1 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #222;
+}
+
+.bank-text {
+    text-align: center;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.bank-info {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.info-item {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.info-item span {
+    color: #666;
+}
+
+.info-item strong {
+    color: #111;
+}
+
+.qr-box {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.qr-box img {
+    width: 220px;
+    height: 220px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.bank-btn {
+    width: 100%;
+    margin-top: 30px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    background: #111;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.bank-btn:hover {
+    background: #444;
+}

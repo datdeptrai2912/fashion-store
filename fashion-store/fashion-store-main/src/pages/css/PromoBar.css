@@ -1,0 +1,17 @@
+.promo {
+  background: #fafafa;
+  border-bottom: 1px solid var(--line);
+  text-align: center;
+  font-size: 13px;
+  padding: 9px 16px;
+  color: var(--black);
+}
+
+.promo b,
+.promo strong {
+  font-weight: 600;
+}
+
+.promo a {
+  color: #0066cc;
+}
